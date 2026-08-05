@@ -1,0 +1,149 @@
+:root {
+    --the-red: #6e0e0a;
+    --secondary: #fff6ea;
+    --secondary-dark: #ddcbb6;
+    --accent: #124e78;
+    --accent-dark: #0b2e4d;
+    --text-color: #000000;
+    --text-light: #fff6ea;
+    --bg-color: #fff6ea;
+
+    --shadow-soft: 0 3px 7px 3px rgba(0, 0, 0, 0.393);
+    --shadow-inset: inset 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    --max-width: 1400px;
+
+    --font-display: "DistilleryStrong", serif;
+    --font-heading: "Cinzel Bold", serif;
+    --font-body: "Montserrat-Regular", sans-serif;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "DistilleryStrong";
+    src: url("https://db.onlinewebfonts.com/t/4cc83785869a1c1a43299ee232d4ac5d.eot");
+    src: url("https://db.onlinewebfonts.com/t/4cc83785869a1c1a43299ee232d4ac5d.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/4cc83785869a1c1a43299ee232d4ac5d.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/4cc83785869a1c1a43299ee232d4ac5d.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/4cc83785869a1c1a43299ee232d4ac5d.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/4cc83785869a1c1a43299ee232d4ac5d.svg#DistilleryStrong") format("svg");
+}
+
+@font-face {
+    font-family: "Cinzel Bold";
+    src: url("https://db.onlinewebfonts.com/t/2d13d52146cd7dc1b1206d1d74fa58bc.eot");
+    src: url("https://db.onlinewebfonts.com/t/2d13d52146cd7dc1b1206d1d74fa58bc.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/2d13d52146cd7dc1b1206d1d74fa58bc.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/2d13d52146cd7dc1b1206d1d74fa58bc.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/2d13d52146cd7dc1b1206d1d74fa58bc.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/2d13d52146cd7dc1b1206d1d74fa58bc.svg#Cinzel Bold") format("svg");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("https://db.onlinewebfonts.com/t/07689d4eaaa3d530d58826b5d7f84735.eot");
+    src: url("https://db.onlinewebfonts.com/t/07689d4eaaa3d530d58826b5d7f84735.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/07689d4eaaa3d530d58826b5d7f84735.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/07689d4eaaa3d530d58826b5d7f84735.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/07689d4eaaa3d530d58826b5d7f84735.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/07689d4eaaa3d530d58826b5d7f84735.svg#Montserrat-Regular") format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {    
+    background-color:#6e0e0a;
+    padding: 60px;
+}
+
+/*main {
+    background-image: url("../assets/blog.jpg");
+    background-size:contain;
+}*/
+
+main {
+    background-color: #6e0e0a;
+}
+
+footer {
+    background-color: #6e0e0a;
+    color: antiquewhite;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.link {
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 18px;
+}
+
+.link:hover {
+    color: #ddcbb6;
+}
+
+
+/* Home Page */
+
+.hero-section {
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left:30px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.page-title, .day-btn {
+    font-family: "DistilleryStrong", serif;
+    font-size: 100px;
+    color: black;
+    text-align:left;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.day-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    appearance: none;
+}
+
+.day-btn:hover {
+    cursor: pointer;
+}
+
+.position {
+    font-family: "Cinzel Bold", serif;
+    font-size: 30px;
+    color: black;
+    text-align:left;
+    padding-left: 50px;
+}
+
+.bio {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align:left;
+    padding: 50px;
+}
+
+.hero-img {
+    display:flex;
+    justify-content:right;
+    padding-right: 50px;
+}
