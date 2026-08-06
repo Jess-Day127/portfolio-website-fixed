@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --the-red: #6e0e0a;
     --secondary: #fff6ea;
     --secondary-dark: #ddcbb6;
@@ -92,19 +92,37 @@ footer {
     color: #ddcbb6;
 }
 
+.back-to-top {
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 18px;
+}
+
 
 /* Home Page */
 
-.hero-section, .featured-work-section {
+.hero-section {
     display: flex;
     align-items:flex-start;
     justify-content: space-between;
+}
+
+.featured-work-section, .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section, .featured-work-section, .contact-section {
+    background-color: antiquewhite;
+    border-radius: 20px;
     margin-top: 0;
     margin-right: 30px;
     margin-bottom: 20px;
     margin-left:30px;
-    background-color: antiquewhite;
-    border-radius: 20px;
+    padding-bottom: 20px;
 }
 
 .hero-text {
@@ -113,6 +131,7 @@ footer {
     justify-content: center;
     align-items:center;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .page-title, .day-btn {
@@ -182,11 +201,13 @@ footer {
     cursor: pointer;
 }
 
+
 .section-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .banner {
@@ -195,4 +216,26 @@ footer {
     justify-content: center;
     width: 900px;
     height: auto;
+    padding-bottom: 20px;
 }
+
+.featured-work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card, .card-front-image, .card-back {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow-soft);
+}
+
+.filler-img {
+    width: 900px;
+    height: auto;
+}
+
