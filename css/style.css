@@ -52,6 +52,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 header {    
@@ -90,13 +91,40 @@ footer {
 
 .link:hover {
     color: #ddcbb6;
+    transform: scale(1.1);
 }
 
-.back-to-top {
-    color: antiquewhite;
-    text-decoration: none;
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: 18px;
+.back-to-top-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 0 3px 0 3px;
+
+    position: fixed;
+    border-radius: 50%;
+    background-color: #124e78;
+    right: 23px;
+    bottom: 20px;
+
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.back-to-top-btn-img {
+    background-image: url("../assets/arrow-up.png");
+    filter: invert(100%);
+    width: 55px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px; 
+}
+
+.back-to-top-btn:hover {
+    transform: scale(1.1);
+    background-color: #0b2e4d;
 }
 
 
@@ -115,7 +143,7 @@ footer {
     justify-content: center;
 }
 
-.hero-section, .featured-work-section, .contact-section {
+.hero-section, .featured-work-section, .contact-section, .about-section, .skills-section, .experience-section, .education-section {
     background-color: antiquewhite;
     border-radius: 20px;
     margin-top: 0;
@@ -125,7 +153,7 @@ footer {
     padding-bottom: 20px;
 }
 
-.hero-text {
+.hero-text, .about-text, .skills-text, .experience-text, .education-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,6 +182,7 @@ footer {
 
 .day-btn:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .position {
@@ -197,8 +226,9 @@ footer {
 }
 
 .cta-btn:hover {
-    border: 3px solid #124e78;
     cursor: pointer;
+    transform: scale(1.02);
+    background-color: #0b2e4d;
 }
 
 
@@ -238,4 +268,7 @@ footer {
     width: 900px;
     height: auto;
 }
+
+
+/* About Page */
 
