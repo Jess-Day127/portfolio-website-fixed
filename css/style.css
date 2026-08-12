@@ -253,15 +253,27 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     padding: 30px;
 }
 
-.card, .card-front-image, .card-back {
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front-image {
     width: 400px;
     height: auto;
     border-radius: 10px;
-    box-shadow: var(--shadow-soft);
+    box-shadow: 10px 10px 5px rgb(65, 61, 61);
+}
+
+.card-front-image:hover {
+    transform: scale(1.01);
 }
 
 .filler-img {
@@ -269,6 +281,17 @@ footer {
     height: auto;
 }
 
-
 /* About Page */
+
+.about-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.about-pic {
+    width: 450px;
+    height: auto;
+}
+
 
